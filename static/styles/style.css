@@ -89,10 +89,8 @@ body {
 }
 
 .form form {
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .form form .form-item input[type="text"], .form form .form-item input[type="password"] {
@@ -127,7 +125,7 @@ body {
 
 .form form .form-item input {
   border: none;
-  width: 320px;
+  width: 100%;
   border-radius: 5px;
   margin: 0px auto;
 }
@@ -145,10 +143,19 @@ body {
   margin-bottom: 0px;
 }
 
-.form form .btn-submi button {
+.form form button {
+  border-radius: 5px;
   padding: 10px 20px;
   background-color: #261cb6;
   border: 1px solid #261cb6;
+  color: #fff;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.343);
+          box-shadow: 0 1px 6px rgba(0, 0, 0, 0.343);
+}
+
+.form form button:hover {
+  background-color: #6762b8;
+  border: 1px solid #0e0860;
 }
 
 .rooms-main {
@@ -213,5 +220,87 @@ body {
 
 .rooms-main .item-background:first-child {
   margin-left: 25px;
+}
+
+.background-chat {
+  width: 520px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.background-chat .space .card-message {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: #72a514;
+  padding: 10px 15px;
+}
+
+.background-chat .space .card-message .username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.background-chat .space .card-message:last-child {
+  margin-bottom: 0px;
+}
+
+.form-room {
+  width: 520px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-room form input[type="text"] {
+  background-color: #b9aaaa;
+  padding: 10px 10px;
+  width: 400px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.form-room form input[type="text"]:focus {
+  outline: 1px outset rgba(196, 193, 234, 0.578);
+}
+
+.form-room form input::-webkit-input-placeholder {
+  color: #302424;
+}
+
+.form-room form input:-ms-input-placeholder {
+  color: #302424;
+}
+
+.form-room form input::-ms-input-placeholder {
+  color: #302424;
+}
+
+.form-room form input::placeholder {
+  color: #302424;
+}
+
+.form-room button {
+  width: 100px;
+  background-color: #6762b8;
+  border-radius: 5px;
+  color: #fff;
+  border: 1px solid #6762b8;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.form-room button:hover {
+  border: 1px solid #6762b8;
+  background-color: white;
+  color: #6762b8;
 }
 /*# sourceMappingURL=style.css.map */

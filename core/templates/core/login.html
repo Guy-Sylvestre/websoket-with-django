@@ -12,11 +12,11 @@
         {% csrf_token %}
 
         <div class="form-item">
-            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="username" placeholder="Username" autocomplete="off">
         </div>
 
         <div class="form-item">
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password" autocomplete="off">
         </div>
 
         {% if form.errors %}
@@ -29,9 +29,9 @@
             {% endfor %}
         {% endif %}
 
-        <div class="btn-submit">
+        
             <button>Log in</button>
-        </div>
+        
     </form>
 </div>
 {% endblock content %}

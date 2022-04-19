@@ -8,7 +8,7 @@ body{
     background-color: rgb(103, 98, 184);
 }
 
-// MENU DE NAVIGATION
+//----------------------------------------------------------------- MENU DE NAVIGATION
 .navbar{
     display: flex;
     align-items: center;
@@ -77,7 +77,7 @@ body{
 }
 
 
-// FRONTAL PAGE, SIGN UP, ROOMS
+// ----------------------------------------------------------------FRONTAL PAGE, SIGN UP, ROOMS
 .frontalPage, .signUp, .rooms{
     h1{
         text-align: center;
@@ -86,14 +86,11 @@ body{
     }
 }
 
-// SIGN UP FORMULAIRE
+// ----------------------------------------------------------------SIGN UP FORMULAIRE
 .form{
     form{
-        // background-color: red;
-        text-align: center;
-        // display: flex;
-        // flex-direction: column;
-        align-items: center;
+        width: 320px;
+        margin: 0 auto;
         .form-item{
             input[type="text"], input[type="password"]{
                 background-color: rgb(255, 255, 255);
@@ -117,7 +114,7 @@ body{
             input{
                 border: none;
                 
-                width: 320px;
+                width: 100%;
                 border-radius: 5px;
                 margin: 0px auto;
                 
@@ -136,24 +133,26 @@ body{
             margin-bottom: 0px;
         }
 
-        .btn-submi{
-            
+     
             button{
+                border-radius: 5px;
                 padding: 10px 20px;
-            background-color: rgb(38, 28, 182);
-            border: 1px solid rgb(38, 28, 182);
+                background-color: rgb(38, 28, 182);
+                border: 1px solid rgb(38, 28, 182);
+                color: #fff;
+                box-shadow: 0 1px 6px  rgba(0, 0, 0, 0.343);;
             }
-        }
+        
 
-        // .btn-submit:hover{
-        //     background-color: rgb(103, 98, 184);
-        //     border: 1px solid rgb(14, 8, 96);
-        // }
+        button:hover{
+            background-color: rgb(103, 98, 184);
+            border: 1px solid rgb(14, 8, 96);
+        }
 
     }
 }
 
-// LE CORPS DU SALOM
+// ------------------------------------------------------LE CORPS DU SALOM LISTE DES SALON CREER
 .rooms-main{
     width: 100%;
     display: flex;
@@ -205,4 +204,75 @@ body{
         margin-left: 25px;
     }
     
+}
+
+// -------------------------------------------------------BACKGROUND CHAT SALON
+.background-chat{
+    width: 520px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-top: 30px;
+    .space{
+        .card-message{
+            margin-bottom: 15px;
+            border-radius:10px;
+            background-color: rgb(114, 165, 20);
+            padding: 10px 15px;
+            .username{
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+        }
+
+        .card-message:last-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.form-room{
+    width: 520px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius:10px;
+    padding: 15px;
+    margin-top: 30px;
+    display: flex;
+
+    form{
+        
+        input[type="text"]{
+            background-color: rgb(185, 170, 170);
+            padding: 10px 10px;
+            width: 400px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        input[type="text"]:focus{
+            outline: 1px outset rgba(196, 193, 234, 0.578);
+        }
+
+        input::placeholder{
+            color: rgb(48, 36, 36);
+        }
+    }
+
+    button{
+        width: 100px;
+        background-color: rgb(103, 98, 184);
+        border-radius: 5px;
+        color: #fff;
+        border: 1px solid rgb(103, 98, 184);
+        transition: all 0.5s ease-in-out;
+    }
+
+    button:hover{
+        border: 1px solid rgb(103, 98, 184);
+        background-color: rgb(255, 255, 255);
+        color: rgb(103, 98, 184);
+    }
 }

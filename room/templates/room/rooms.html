@@ -12,7 +12,7 @@
         <div class="item-background">
             <div class="item">
                 <h2 class="title"> {{room.name}} </h2>
-                <a href="" class="btn-joint">Join</a>
+                <a href="{% url 'room' room.slug %}" class="btn-joint">Join</a>
             </div>
         </div>
     {% endfor %}
