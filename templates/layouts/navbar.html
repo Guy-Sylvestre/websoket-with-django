@@ -4,12 +4,22 @@
     </div>
     <div class="menu">
         <ul>
-            <li class="item">
-                <a href="/">Login In</a>
-            </li>
-            <li class="item">
-                <a href="/">Sign Up</a>
-            </li>
+            {% if request.user.is_authenticated %}
+                <li class="item">
+                    <a href="/rooms/">Rooms</a>
+                </li>
+                <li class="item">
+                    <a href="/logout/">Log out</a>
+                </li>
+            {% else %}
+                <li class="item">
+                    <a href="/login/">Login In</a>
+                </li>
+                <li class="item">
+                    <a href="/signup/">Sign Up</a>
+                </li>
+            {% endif %}
+            
         </ul>
     </div>
 </nav>
