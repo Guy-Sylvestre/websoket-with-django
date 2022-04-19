@@ -1,5 +1,5 @@
 {% extends "main.html" %}
-
+{% load static %}
 {% block title %} {{room.name}} {% endblock %}
 
 {% block content %}
@@ -8,7 +8,7 @@
 </div>
 
 <div class="background-chat">
-    <div class="space">
+    <div class="space" id="chat-messages">
         <div class="card-message">
             <h3 class="username">Guy</h3>
             <p class="desc">lorem ipsum dolor sit amet, consectetur adip</p>
@@ -28,10 +28,21 @@
 
 <div class="form-room">
     <form action="." method="post">
-        <input type="text" name="content" placeholder="Your message">
+        {% csrf_token %}
+        <input id="chat-message-input" type="text" name="content" placeholder="Your message">
+
+        <button id="chat-message-submit" class="">Submit</button>
     </form>
 
-    <button id="chat-message-submit" class="">Submit</button>
+    
 </div>
 {% endblock content %}
 
+
+{% block scripts %}
+
+{{ room.slug|json_script:"json-rooname" }}
+{{ request.user.username|json_script:"json-username" }}
+
+<script src="{% static 'js/room.js' %}"></script>
+{% endblock scripts %}

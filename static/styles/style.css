@@ -259,10 +259,17 @@ body {
   display: flex;
 }
 
+.form-room form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 20px;
+}
+
 .form-room form input[type="text"] {
   background-color: #b9aaaa;
   padding: 10px 10px;
-  width: 400px;
+  width: 370px;
   border: none;
   border-radius: 5px;
   margin-right: 20px;
@@ -288,7 +295,7 @@ body {
   color: #302424;
 }
 
-.form-room button {
+.form-room form button {
   width: 100px;
   background-color: #6762b8;
   border-radius: 5px;
@@ -298,7 +305,7 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
-.form-room button:hover {
+.form-room form button:hover {
   border: 1px solid #6762b8;
   background-color: white;
   color: #6762b8;

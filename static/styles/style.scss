@@ -242,11 +242,12 @@ body{
     display: flex;
 
     form{
-        
+        display: flex;
+        margin-right: 20px;
         input[type="text"]{
             background-color: rgb(185, 170, 170);
             padding: 10px 10px;
-            width: 400px;
+            width: 370px;
             border: none;
             border-radius: 5px;
             margin-right: 20px;
@@ -259,20 +260,22 @@ body{
         input::placeholder{
             color: rgb(48, 36, 36);
         }
+
+         button{
+            width: 100px;
+            background-color: rgb(103, 98, 184);
+            border-radius: 5px;
+            color: #fff;
+            border: 1px solid rgb(103, 98, 184);
+            transition: all 0.5s ease-in-out;
+        }
+
+        button:hover{
+            border: 1px solid rgb(103, 98, 184);
+            background-color: rgb(255, 255, 255);
+            color: rgb(103, 98, 184);
+        }
     }
 
-    button{
-        width: 100px;
-        background-color: rgb(103, 98, 184);
-        border-radius: 5px;
-        color: #fff;
-        border: 1px solid rgb(103, 98, 184);
-        transition: all 0.5s ease-in-out;
-    }
-
-    button:hover{
-        border: 1px solid rgb(103, 98, 184);
-        background-color: rgb(255, 255, 255);
-        color: rgb(103, 98, 184);
-    }
+   
 }
