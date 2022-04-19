@@ -82,7 +82,7 @@ body {
   cursor: pointer;
 }
 
-.frontalPage h1, .signUp h1 {
+.frontalPage h1, .signUp h1, .rooms h1 {
   text-align: center;
   margin-top: 50px;
   color: white;
@@ -149,5 +149,69 @@ body {
   padding: 10px 20px;
   background-color: #261cb6;
   border: 1px solid #261cb6;
+}
+
+.rooms-main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.rooms-main .item-background {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  margin-right: 25px;
+  border-radius: 10px;
+}
+
+.rooms-main .item-background .item {
+  width: 150px;
+  border-radius: 10px;
+  color: #123;
+}
+
+.rooms-main .item-background .item .title {
+  font-size: 30px;
+  padding-top: 0px;
+  margin-bottom: 30px;
+}
+
+.rooms-main .item-background .item .btn-joint {
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #6762b8;
+  border-radius: 10px;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+}
+
+.rooms-main .item-background .item .btn-joint:hover {
+  background-color: #0e0860;
+}
+
+.rooms-main .item-background:last-child {
+  margin-right: 0px;
+}
+
+.rooms-main .item-background:first-child {
+  margin-left: 25px;
 }
 /*# sourceMappingURL=style.css.map */

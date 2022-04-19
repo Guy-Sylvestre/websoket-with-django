@@ -77,8 +77,8 @@ body{
 }
 
 
-// FRONTAL PAGE
-.frontalPage, .signUp{
+// FRONTAL PAGE, SIGN UP, ROOMS
+.frontalPage, .signUp, .rooms{
     h1{
         text-align: center;
         margin-top: 50px;
@@ -151,8 +151,58 @@ body{
         // }
 
     }
-
-    
 }
 
-// 6:28
+// LE CORPS DU SALOM
+.rooms-main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    // justify-content: space-around;
+    text-align: center;
+
+    .item-background{
+        margin-top: 50px;
+        padding: 20px;
+        background-color: #fff;
+        margin-right: 25px;
+        border-radius: 10px;
+        .item{
+            width: 150px;
+            border-radius: 10px;
+            color: #123;
+            .title{
+                font-size: 30px;
+                padding-top: 0px;
+                margin-bottom: 30px;
+            }
+
+            .btn-joint{
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                height: 30px;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(103, 98, 184);
+                border-radius: 10px;
+                transition: background-color .5s ease-in-out; 
+            }
+
+            .btn-joint:hover{
+                background-color: rgb(14, 8, 96);
+            }
+        }
+
+    }
+
+    .item-background:last-child{
+        margin-right: 0px;
+    }
+
+    .item-background:first-child{
+        margin-left: 25px;
+    }
+    
+}

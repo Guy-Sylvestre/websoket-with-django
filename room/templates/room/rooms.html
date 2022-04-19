@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+{% block title %}Rooms{% endblock %}
+
+{% block content %}
+<div class="rooms">
+    <h1>Rooms</h1>
+</div>
+
+<div class="rooms-main">
+    {% for room in rooms %}
+        <div class="item-background">
+            <div class="item">
+                <h2 class="title"> {{room.name}} </h2>
+                <a href="" class="btn-joint">Join</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}
+
