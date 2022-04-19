@@ -14,14 +14,16 @@
             <p class="desc">lorem ipsum dolor sit amet, consectetur adip</p>
         </div>
 
-        <div class="card-message">
-            <h3 class="username">Guy</h3>
-            <p class="desc">lorem ipsum dolor sit amet, consectetur adip</p>
-        </div>
-        <div class="card-message">
-            <h3 class="username">Guy</h3>
-            <p class="desc">lorem ipsum dolor sit amet, consectetur adip</p>
-        </div>
+       
+
+        {% for message in messages %}
+            
+            <div class="card-message">
+                <h3 class="username">{{ message.user.username }}</h3>
+                <p class="desc">{{ message.content }}</p>
+            </div>
+        {% endfor %}
+
     </div>
 </div>
 
@@ -31,7 +33,7 @@
         {% csrf_token %}
         <input id="chat-message-input" type="text" name="content" placeholder="Your message">
 
-        <button id="chat-message-submit" class="">Submit</button>
+        <button id="chat-message-submit" >Submit</button>
     </form>
 
     

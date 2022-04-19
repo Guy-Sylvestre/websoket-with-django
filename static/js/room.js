@@ -19,8 +19,8 @@ chatSocket.onmessage = function(e) {
             html += '<h3 class="username">' + data.username + '</h3>';
             html += '<p class="desc">' + data.message + '</p> </div>';
            
-        
-            document.querySelector("#chat-messages").innerHTML += html;
+        console.log(html);
+        document.querySelector("#chat-messages").innerHTML += html;
     }
 }
 
