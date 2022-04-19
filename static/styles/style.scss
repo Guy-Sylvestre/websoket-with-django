@@ -1,0 +1,158 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(103, 98, 184);
+}
+
+// MENU DE NAVIGATION
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(14, 8, 96);
+    height: 80px;
+    width: 100%;
+
+    .logo{
+        margin-left: 30px;
+        a{
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            padding: 30px 30px;
+            font-weight: bold;
+            // background-color: red;
+        }
+    }
+
+    // Login in et Sign in
+    .menu{
+        
+        ul{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            .item{
+                color: white;
+                list-style-type: none;
+                
+                a{
+                    text-decoration: none;
+                    color: white;
+                    transition: color 0.5s ease-in-out;
+                    transition: background-color .5s ease-in-out;
+                }
+            }
+
+            .item:first-child{
+                margin-right: 30px;
+            }
+
+            .item:first-child a:hover{
+                color: rgb(0, 225, 255);
+            }
+
+            .item:last-child a{
+                padding: 10px 25px;
+                background-color: rgb(38, 28, 182);
+                border-radius: 15px;
+                border: 1px solid rgb(38, 28, 182);
+            }
+
+            
+            .item:last-child a:hover{
+                border: 1px solid rgb(0, 225, 255);
+                background-color: rgb(14, 8, 96);
+                color: rgb(0, 225, 255);
+                cursor: pointer;
+                
+            }
+        }
+        
+    }
+}
+
+
+// FRONTAL PAGE
+.frontalPage, .signUp{
+    h1{
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+    }
+}
+
+// SIGN UP FORMULAIRE
+.form{
+    form{
+        // background-color: red;
+        text-align: center;
+        // display: flex;
+        // flex-direction: column;
+        align-items: center;
+        .form-item{
+            input[type="text"], input[type="password"]{
+                background-color: rgb(255, 255, 255);
+               
+                padding: 8px 15px;
+            }
+
+            input[type="text"]{
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+
+            input[type="password"]{
+                margin-bottom: 10px;
+            }
+
+            input::placeholder{
+                color: rgba(14, 8, 96, 0.39);
+            }
+
+            input{
+                border: none;
+                
+                width: 320px;
+                border-radius: 5px;
+                margin: 0px auto;
+                
+            }
+
+            input:focus{
+                outline: 2px outset rgb(14, 8, 96);
+            }
+
+            input:hover{
+                box-shadow: 0px 1px 4px;
+            }
+
+        }
+        .form-item:last-child input[type="password"]{
+            margin-bottom: 0px;
+        }
+
+        .btn-submi{
+            
+            button{
+                padding: 10px 20px;
+            background-color: rgb(38, 28, 182);
+            border: 1px solid rgb(38, 28, 182);
+            }
+        }
+
+        // .btn-submit:hover{
+        //     background-color: rgb(103, 98, 184);
+        //     border: 1px solid rgb(14, 8, 96);
+        // }
+
+    }
+
+    
+}
+
+// 6:28

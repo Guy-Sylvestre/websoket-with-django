@@ -1,0 +1,153 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #6762b8;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #0e0860;
+  height: 80px;
+  width: 100%;
+}
+
+.navbar .logo {
+  margin-left: 30px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  padding: 30px 30px;
+  font-weight: bold;
+}
+
+.navbar .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.navbar .menu ul .item {
+  color: white;
+  list-style-type: none;
+}
+
+.navbar .menu ul .item a {
+  text-decoration: none;
+  color: white;
+  -webkit-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+  -webkit-transition: background-color .5s ease-in-out;
+  transition: background-color .5s ease-in-out;
+}
+
+.navbar .menu ul .item:first-child {
+  margin-right: 30px;
+}
+
+.navbar .menu ul .item:first-child a:hover {
+  color: #00e1ff;
+}
+
+.navbar .menu ul .item:last-child a {
+  padding: 10px 25px;
+  background-color: #261cb6;
+  border-radius: 15px;
+  border: 1px solid #261cb6;
+}
+
+.navbar .menu ul .item:last-child a:hover {
+  border: 1px solid #00e1ff;
+  background-color: #0e0860;
+  color: #00e1ff;
+  cursor: pointer;
+}
+
+.frontalPage h1, .signUp h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.form form {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form form .form-item input[type="text"], .form form .form-item input[type="password"] {
+  background-color: white;
+  padding: 8px 15px;
+}
+
+.form form .form-item input[type="text"] {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.form form .form-item input[type="password"] {
+  margin-bottom: 10px;
+}
+
+.form form .form-item input::-webkit-input-placeholder {
+  color: rgba(14, 8, 96, 0.39);
+}
+
+.form form .form-item input:-ms-input-placeholder {
+  color: rgba(14, 8, 96, 0.39);
+}
+
+.form form .form-item input::-ms-input-placeholder {
+  color: rgba(14, 8, 96, 0.39);
+}
+
+.form form .form-item input::placeholder {
+  color: rgba(14, 8, 96, 0.39);
+}
+
+.form form .form-item input {
+  border: none;
+  width: 320px;
+  border-radius: 5px;
+  margin: 0px auto;
+}
+
+.form form .form-item input:focus {
+  outline: 2px outset #0e0860;
+}
+
+.form form .form-item input:hover {
+  -webkit-box-shadow: 0px 1px 4px;
+          box-shadow: 0px 1px 4px;
+}
+
+.form form .form-item:last-child input[type="password"] {
+  margin-bottom: 0px;
+}
+
+.form form .btn-submi button {
+  padding: 10px 20px;
+  background-color: #261cb6;
+  border: 1px solid #261cb6;
+}
+/*# sourceMappingURL=style.css.map */

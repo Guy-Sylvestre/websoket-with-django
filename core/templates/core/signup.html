@@ -1,0 +1,42 @@
+{% extends "main.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<div class="signUp">
+    <h1>sign Up</h1>
+</div>
+
+<div class="form">
+    <form action="."  method="post">
+        {% csrf_token %}
+
+        <div class="form-item">
+            <input type="text" name="username" placeholder="Username">
+        </div>
+
+        <div class="form-item">
+            <input type="password" name="password1" placeholder="Password">
+        </div>
+
+        <div class="form-item">
+            <input type="password" name="password2" placeholder="Password again">
+        </div>
+
+        {% if form.errors %}
+            {% for field in form %}
+                {% for error in errors %}
+                    <div class="error">
+                        <p>{{ error | escape }}</p>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        {% endif %}
+
+        <div class="btn-submit">
+            <button>Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock content %}
+
